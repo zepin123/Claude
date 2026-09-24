@@ -1,0 +1,49 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() { return request.auth != null; }
+    function own(uid) { return signedIn() && request.auth.uid == uid; }
+    function userDoc(uid) { return get(/databases/$(database)/documents/users/$(uid)); }
+    function active(uid) { return own(uid) && userDoc(uid).data.active == true; }
+    function admin() { return signedIn() && userDoc(request.auth.uid).data.active == true && userDoc(request.auth.uid).data.role == 'admin'; }
+    function validNewProfile(uid) {
+      return own(uid)
+        && request.resource.data.keys().hasAll(['uid','email','name','role','active','createdAt','updatedAt'])
+        && request.resource.data.keys().hasOnly(['uid','email','name','role','active','createdAt','updatedAt'])
+        && request.resource.data.uid == uid
+        && request.resource.data.email == request.auth.token.email
+        && request.resource.data.name is string
+        && request.resource.data.name.size() > 0
+        && request.resource.data.name.size() <= 80
+        && request.resource.data.role == 'user'
+        && request.resource.data.active == true
+        && request.resource.data.createdAt is string
+        && request.resource.data.updatedAt is string;
+    }
+    function validBase(uid) { return request.resource.data.user_id == uid && request.resource.data.id is string && request.resource.data.created_at is string && request.resource.data.updated_at is string; }
+    function validTask(uid) { return validBase(uid) && request.resource.data.title is string && request.resource.data.title.size() > 0 && request.resource.data.title.size() <= 240 && request.resource.data.priority in ['baja','media','alta','critica'] && request.resource.data.status in ['pendiente','en_progreso','completada','pospuesta'] && request.resource.data.duration is int && request.resource.data.duration > 0 && request.resource.data.duration <= 1440; }
+
+    match /users/{uid} {
+      allow get: if active(uid) || admin();
+      allow list: if admin();
+      allow create: if validNewProfile(uid);
+      allow delete: if false;
+      allow update: if active(uid)
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['name','preferences','updatedAt'])
+        && request.resource.data.role == resource.data.role
+        && request.resource.data.email == resource.data.email
+        && request.resource.data.active == resource.data.active;
+
+      match /tasks/{id} { allow read: if active(uid); allow create, update: if active(uid) && validTask(uid) && request.resource.data.id == id; allow delete: if active(uid); }
+      match /events/{id} { allow read: if active(uid); allow create, update: if active(uid) && validBase(uid) && request.resource.data.id == id && request.resource.data.title is string && request.resource.data.title.size() > 0 && request.resource.data.title.size() <= 240 && request.resource.data.start_at is string && request.resource.data.end_at is string; allow delete: if active(uid); }
+      match /{collectionName}/{id} {
+        allow read: if active(uid) && collectionName in ['categories','habits','habitLogs','lists','listItems','quickCapture','resources','preferences','integrations','notificationPreferences'];
+        allow create, update: if active(uid) && collectionName in ['categories','habits','habitLogs','lists','listItems','quickCapture','resources','preferences','notificationPreferences'] && validBase(uid) && request.resource.data.id == id;
+        allow delete: if active(uid) && collectionName in ['categories','habits','habitLogs','lists','listItems','quickCapture','resources','preferences','notificationPreferences'];
+      }
+    }
+    match /integrationSecrets/{uid} { allow read, write: if false; }
+    match /system/{document=**} { allow read, write: if false; }
+    match /{document=**} { allow read, write: if false; }
+  }
+}

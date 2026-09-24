@@ -1,0 +1,4 @@
+import {HttpsError,onCall} from 'firebase-functions/v2/https';
+import {db} from './firebase/admin.js';
+async function requireAdmin(uid?:string){if(!uid)throw new HttpsError('unauthenticated','Inicia sesión.');const snap=await db.doc(`users/${uid}`).get();if(!snap.exists||snap.data()?.active!==true||snap.data()?.role!=='admin')throw new HttpsError('permission-denied','Se requiere rol administrador.')}
+export const setUserActive=onCall({region:'us-central1'},async request=>{await requireAdmin(request.auth?.uid);const uid=request.data?.uid,active=request.data?.active;if(typeof uid!=='string'||typeof active!=='boolean'||uid===request.auth!.uid)throw new HttpsError('invalid-argument','Usuario o estado no válido.');await db.doc(`users/${uid}`).update({active,updatedAt:new Date().toISOString()});return {ok:true}});
