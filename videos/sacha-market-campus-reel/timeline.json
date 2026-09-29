@@ -1,0 +1,382 @@
+{
+  "note": "Single source of truth for picture + sound. Everything is in BEATS on the measured grid (beats.json).",
+  "title": "Sacha Market — campus reel",
+  "duration": 24,
+  "fps": 60,
+  "bpm": 120,
+  "formats": [
+    "16x9",
+    "9x16"
+  ],
+  "music": {
+    "source": "synth",
+    "chords": [
+      "C",
+      "G",
+      "Am",
+      "F"
+    ],
+    "seed": 919,
+    "sections": [
+      {
+        "at": "hook",
+        "kind": "intro"
+      },
+      {
+        "at": "busca",
+        "kind": "full"
+      },
+      {
+        "at": "vende",
+        "kind": "full"
+      },
+      {
+        "at": 29,
+        "kind": "build"
+      },
+      {
+        "at": 31.5,
+        "kind": "gap"
+      },
+      {
+        "at": "stats",
+        "kind": "drop"
+      },
+      {
+        "at": "quote",
+        "kind": "build"
+      },
+      {
+        "at": 43.5,
+        "kind": "gap"
+      },
+      {
+        "at": "logo",
+        "kind": "drop"
+      },
+      {
+        "at": 47,
+        "kind": "outro"
+      }
+    ],
+    "accents": [
+      "logo"
+    ]
+  },
+  "voiceover": null,
+  "marks": {
+    "hook": 0,
+    "hook_w2": 0.5,
+    "hook_w3": 1,
+    "l2a": 2,
+    "l2b": 2.5,
+    "l2c": 3,
+    "lo": 4,
+    "hl": 4.5,
+    "phone_in": 6,
+    "busca": 8,
+    "tap_search": 9,
+    "type0": 9.25,
+    "type1": 11,
+    "tap_buscar": 11.5,
+    "push_explorar": 12,
+    "tap_card": 14.5,
+    "push_producto": 15,
+    "habla": 16,
+    "tap_contact": 19,
+    "bub1": 19.5,
+    "bub2": 21,
+    "acuerda": 22,
+    "pin": 22.5,
+    "vende": 24,
+    "tap_publicar": 25.5,
+    "push_publicar": 26,
+    "ph1": 27,
+    "ph2": 27.5,
+    "ph3": 28,
+    "togito": 29.5,
+    "sticker": 30.5,
+    "stats": 32,
+    "n1": 32,
+    "n2": 33,
+    "n3": 34,
+    "cats": 36,
+    "quote": 40,
+    "q2": 42,
+    "logo": 44,
+    "cta": 45,
+    "url": 45.5,
+    "togi_end": 46,
+    "done": 48
+  },
+  "sfx": [
+    {
+      "at": "hook",
+      "type": "pop",
+      "gain": 0.8,
+      "what": "ESO on frame 0"
+    },
+    {
+      "at": "hook_w2",
+      "type": "pop",
+      "gain": 0.5,
+      "what": "QUE"
+    },
+    {
+      "at": "hook_w3",
+      "type": "pop",
+      "gain": 0.6,
+      "what": "BUSCAS."
+    },
+    {
+      "at": "l2a",
+      "type": "pop",
+      "gain": 0.5,
+      "what": "ALGUIEN"
+    },
+    {
+      "at": "l2b",
+      "type": "pop",
+      "gain": 0.45,
+      "what": "DEL"
+    },
+    {
+      "at": "l2c",
+      "type": "pop",
+      "gain": 0.5,
+      "what": "CAMPUS"
+    },
+    {
+      "at": "lo",
+      "type": "thump",
+      "gain": 0.7,
+      "what": "LO TIENE."
+    },
+    {
+      "at": "hl",
+      "type": "whoosh",
+      "gain": 0.4,
+      "what": "highlight band wipes"
+    },
+    {
+      "at": "phone_in",
+      "type": "whoosh",
+      "gain": 0.75,
+      "what": "phone lands"
+    },
+    {
+      "at": "busca",
+      "type": "pop",
+      "gain": 0.6,
+      "what": "01 BUSCA."
+    },
+    {
+      "at": "tap_search",
+      "type": "click",
+      "gain": 0.75,
+      "what": "tap search field"
+    },
+    {
+      "at": "type0",
+      "to": "type1",
+      "every": 0.25,
+      "type": "tick",
+      "gain": 0.35,
+      "what": "typing audífonos"
+    },
+    {
+      "at": "tap_buscar",
+      "type": "click",
+      "gain": 0.8,
+      "what": "tap Buscar"
+    },
+    {
+      "at": "push_explorar",
+      "type": "whoosh",
+      "gain": 0.55,
+      "what": "explorar pushes in"
+    },
+    {
+      "at": "tap_card",
+      "type": "click",
+      "gain": 0.8,
+      "what": "tap Audífonos card"
+    },
+    {
+      "at": "push_producto",
+      "type": "whoosh",
+      "gain": 0.55,
+      "what": "product pushes in"
+    },
+    {
+      "at": "habla",
+      "type": "pop",
+      "gain": 0.6,
+      "what": "02 HABLA."
+    },
+    {
+      "at": "tap_contact",
+      "type": "click",
+      "gain": 0.8,
+      "what": "tap Contactar vendedor"
+    },
+    {
+      "at": "bub1",
+      "type": "pop",
+      "gain": 0.7,
+      "what": "message bubble"
+    },
+    {
+      "at": "bub2",
+      "type": "pop",
+      "gain": 0.7,
+      "what": "reply bubble"
+    },
+    {
+      "at": "acuerda",
+      "type": "pop",
+      "gain": 0.6,
+      "what": "03 ACUERDA."
+    },
+    {
+      "at": "pin",
+      "type": "pop",
+      "gain": 0.55,
+      "what": "meeting-point tag"
+    },
+    {
+      "at": "vende",
+      "type": "whoosh",
+      "gain": 0.7,
+      "what": "ink panel covers (lands on the bar)"
+    },
+    {
+      "at": "tap_publicar",
+      "type": "click",
+      "gain": 0.8,
+      "what": "tap Publicar"
+    },
+    {
+      "at": "push_publicar",
+      "type": "whoosh",
+      "gain": 0.55,
+      "what": "publicar pushes in"
+    },
+    {
+      "at": "ph1",
+      "type": "pop",
+      "gain": 0.6,
+      "what": "photo 1"
+    },
+    {
+      "at": "ph2",
+      "type": "pop",
+      "gain": 0.55,
+      "what": "photo 2"
+    },
+    {
+      "at": "ph3",
+      "type": "pop",
+      "gain": 0.6,
+      "what": "photo 3"
+    },
+    {
+      "at": "togito",
+      "type": "pop",
+      "gain": 0.7,
+      "what": "Togito celebrates"
+    },
+    {
+      "at": "sticker",
+      "type": "pop",
+      "gain": 0.55,
+      "what": "sticker"
+    },
+    {
+      "at": 31.75,
+      "type": "whoosh",
+      "gain": 0.6,
+      "what": "phone pushed past camera"
+    },
+    {
+      "at": "n1",
+      "type": "thump",
+      "gain": 0.8,
+      "what": "0 %"
+    },
+    {
+      "at": "n2",
+      "type": "pop",
+      "gain": 0.65,
+      "what": "3 campus"
+    },
+    {
+      "at": "n3",
+      "type": "pop",
+      "gain": 0.65,
+      "what": "13 categorías"
+    },
+    {
+      "at": "cats",
+      "type": "whoosh",
+      "gain": 0.65,
+      "what": "yellow band covers"
+    },
+    {
+      "at": 36.4,
+      "to": 38.5,
+      "every": 0.4,
+      "type": "pop",
+      "gain": 0.35,
+      "what": "category cards"
+    },
+    {
+      "at": "quote",
+      "type": "shutter",
+      "gain": 0.6,
+      "what": "cut to quote"
+    },
+    {
+      "at": "q2",
+      "type": "pop",
+      "gain": 0.6,
+      "what": "PARA OTRO."
+    },
+    {
+      "at": "logo",
+      "type": "riser",
+      "gain": 0.55,
+      "what": "riser peaks on the logo"
+    },
+    {
+      "at": "logo",
+      "type": "thump",
+      "gain": 0.9,
+      "what": "logo lands"
+    },
+    {
+      "at": "cta",
+      "type": "pop",
+      "gain": 0.6,
+      "what": "CTA line"
+    },
+    {
+      "at": "url",
+      "type": "click",
+      "gain": 0.6,
+      "what": "URL button"
+    },
+    {
+      "at": "togi_end",
+      "type": "pop",
+      "gain": 0.5,
+      "what": "Togito waves"
+    }
+  ],
+  "mix": {
+    "music": 0,
+    "sfx": -3,
+    "vo": 0,
+    "duck": false
+  }
+}

@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sacha Market — campus reel</title>
+<style>
+  /* One display face, one UI face. Point these at the brand's real files in assets/fonts/ (capture.mjs lists them). */
+  @font-face { font-family: 'Display'; src: url(../assets/fonts/anton.woff2) format('woff2'); font-weight: 400; }
+  @font-face { font-family: 'UI'; src: url(../assets/fonts/dmsans.woff2) format('woff2'); font-weight: 400 800; }
+  :root {
+    /* style guide tokens: ONE accent unless the brief says otherwise */
+    --bg: #F7F5EE; --ink: #111111; --ink-2: #4F4E47; --accent: #F4D928; --card: #FFFFFF;
+  }
+  html, body { margin: 0; background: #000; overflow: hidden; }
+  #stage { position: relative; overflow: hidden; background: var(--bg); transform-origin: 0 0;
+           font-family: 'UI', 'Helvetica Neue', Arial, sans-serif; color: var(--ink);
+           -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision; }
+  .scene { position: absolute; inset: 0; overflow: hidden; }
+  .abs { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+  .display { font-family: 'Display', 'Helvetica Neue', Arial, sans-serif; font-weight: 400; letter-spacing: -0.02em; text-transform: uppercase;
+             line-height: 1.02; white-space: nowrap; }
+  /* a line is a mask: words rise through it. Padding keeps descenders; start words >= 140% below so no sliver shows. */
+  .line { position: absolute; overflow: hidden; padding: 0.08em 0.04em 0.18em; margin: -0.08em -0.04em 0; white-space: nowrap; }
+  .word { display: inline-block; }
+  .card { position: absolute; background: var(--card); border-radius: 28px;
+          box-shadow: 0 2px 6px rgba(0,0,0,.05), 0 30px 80px -20px rgba(0,0,0,.22); }
+  /* ---- Sacha Market film ---- */
+  .uil { font-family: 'UI', Arial, sans-serif; font-weight: 500; letter-spacing: 0; line-height: 1.3; white-space: nowrap; }
+  .eyebrow { font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .fill { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+  /* iPhone: drawn device (not product UI). Body 418x872 logical px, screen 390x844 inset 14. 2D only. */
+  .phone { position: absolute; left: 0; top: 0; width: 418px; height: 872px; border-radius: 68px; transform-origin: 0 0;
+           background: linear-gradient(135deg, #5d5d62 0%, #2b2b2e 18%, #1b1b1d 50%, #2b2b2e 82%, #5d5d62 100%);
+           box-shadow: 0 60px 90px -30px rgba(17,17,17,.42), 0 20px 36px -12px rgba(17,17,17,.28); }
+  .phone::before { content: ''; position: absolute; inset: 3px; border-radius: 65px; background: #0c0c0d; }
+  .phone .btn { position: absolute; width: 4px; border-radius: 2px; background: #3a3a3d; }
+  .screen { position: absolute; left: 14px; top: 14px; width: 390px; height: 844px; border-radius: 54px; overflow: hidden; background: var(--bg); }
+  .pages { position: absolute; left: 0; top: 47px; width: 390px; height: 797px; overflow: hidden; }
+  .page { position: absolute; left: 0; top: 0; width: 390px; height: 797px; overflow: hidden; background: var(--bg);
+          box-shadow: -14px 0 32px rgba(17,17,17,.16); }
+  .page > .body { position: absolute; left: 0; top: 0; }
+  .page > .body > img { display: block; }
+  .dim { position: absolute; inset: 0; background: #111; }
+  .status { position: absolute; left: 0; top: 0; width: 390px; height: 47px; background: var(--bg); }
+  .status b { position: absolute; left: 44px; top: 16px; font: 600 16px/18px 'UI'; letter-spacing: -0.2px; }
+  .island { position: absolute; left: 134px; top: 11px; width: 122px; height: 36px; border-radius: 18px; background: #0c0c0d; }
+  .homebar { position: absolute; left: 128px; top: 831px; width: 134px; height: 5px; border-radius: 3px; background: #111; }
+  .touch { position: absolute; left: 0; top: 0; width: 48px; height: 48px; margin: -24px 0 0 -24px; border-radius: 50%;
+           background: rgba(17,17,17,.24); border: 2.5px solid rgba(255,255,255,.95); box-shadow: 0 0 0 1.5px rgba(17,17,17,.45), 0 6px 14px rgba(17,17,17,.25); box-sizing: border-box; transform-origin: 24px 24px; }
+  .ring { position: absolute; left: 0; top: 0; width: 48px; height: 48px; margin: -24px 0 0 -24px; border-radius: 50%;
+          border: 2px solid #111; box-sizing: border-box; transform-origin: 24px 24px; }
+  .bubble { position: absolute; left: 0; top: 0; padding: 22px 30px; font: 600 34px/1.28 'UI'; border: 2px solid #111; border-radius: 26px;
+            background: #fff; white-space: nowrap; box-shadow: 0 24px 44px -18px rgba(17,17,17,.35); }
+  .bubble.me { border-bottom-right-radius: 8px; transform-origin: 100% 100%; }
+  .bubble.them { background: var(--accent); border-bottom-left-radius: 8px; transform-origin: 0% 100%; }
+  .pin { position: absolute; left: 0; top: 0; display: flex; align-items: center; gap: 14px; padding: 18px 28px 18px 22px; border-radius: 999px;
+         background: #111; color: #fff; font: 600 30px/1 'UI'; white-space: nowrap; transform-origin: 50% 0; }
+  .photo { position: absolute; left: 0; top: 0; width: 96px; height: 96px; border: 1.5px solid #111; border-radius: 12px; overflow: hidden; background: #fff;
+           transform-origin: 48px 48px; box-shadow: 0 10px 24px -10px rgba(17,17,17,.4); }
+  .photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .sticker { position: absolute; left: 0; top: 0; padding: 16px 22px; background: var(--accent); border: 2px solid #111; font: 800 28px/1.22 'UI';
+             letter-spacing: 0.04em; white-space: nowrap; transform-origin: 50% 50%; }
+  .band { position: absolute; left: 0; top: 0; display: flex; align-items: center; overflow: hidden; background: var(--accent);
+          border-top: 2px solid #111; border-bottom: 2px solid #111; transform-origin: 50% 50%; }
+  .band span { font: 800 30px/1 'UI'; letter-spacing: 0.12em; white-space: nowrap; }
+  .tile { position: absolute; left: 0; top: 0; border: 2px solid #111; border-radius: 18px; overflow: hidden; transform-origin: 50% 100%; }
+  .tile img { position: absolute; left: 6%; width: 88%; object-fit: contain; mix-blend-mode: multiply; }
+  .tile .num { position: absolute; left: 20px; top: 20px; width: 40px; height: 40px; border: 2px solid #111; border-radius: 50%;
+               font: 600 17px/36px 'UI'; text-align: center; box-sizing: border-box; }
+  .tile strong { position: absolute; left: 24px; right: 22px; bottom: 20px; display: flex; justify-content: space-between; align-items: center;
+                 font: 700 30px/1 'UI'; }
+  .cta-btn { position: absolute; left: 0; top: 0; display: flex; align-items: center; gap: 18px; padding: 26px 38px; border-radius: 14px;
+             background: #111; color: #fff; border: 2px solid #111; font: 700 44px/1 'UI'; white-space: nowrap; transform-origin: 0 50%; }
+  body.play { display: block; }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<script src="lib/motion.js"></script>
+<script src="data.js"></script>
+<script src="core.js"></script>
+<script src="type.js"></script>
+<script src="film.js"></script>
+</body>
+</html>

@@ -1,0 +1,475 @@
+{
+  "url": "http://127.0.0.1:5173/",
+  "title": "Sacha Market · Compra y vende en tu campus UPeU",
+  "description": "Compra, vende y encuentra entre estudiantes de la UPeU. Menos vueltas. Más cerca.",
+  "font_families_by_use": [
+    [
+      "\"DM Sans\", Arial, sans-serif",
+      218
+    ],
+    [
+      "Anton, Impact, \"Arial Narrow\", sans-serif",
+      14
+    ],
+    [
+      "Anton, Impact, sans-serif",
+      8
+    ],
+    [
+      "\"DM Sans\", sans-serif",
+      4
+    ]
+  ],
+  "font_faces": [],
+  "text_colors": [
+    [
+      "rgb(17, 17, 17)",
+      158
+    ],
+    [
+      "rgb(89, 89, 81)",
+      32
+    ],
+    [
+      "rgb(255, 255, 255)",
+      10
+    ],
+    [
+      "rgb(88, 89, 79)",
+      6
+    ],
+    [
+      "rgb(244, 217, 40)",
+      5
+    ],
+    [
+      "rgb(85, 87, 77)",
+      5
+    ],
+    [
+      "rgba(247, 245, 238, 0.82)",
+      4
+    ],
+    [
+      "rgb(92, 92, 83)",
+      4
+    ],
+    [
+      "rgb(85, 85, 85)",
+      3
+    ],
+    [
+      "rgb(67, 68, 60)",
+      3
+    ],
+    [
+      "rgb(89, 89, 79)",
+      2
+    ],
+    [
+      "rgb(72, 120, 245)",
+      2
+    ],
+    [
+      "rgb(102, 102, 94)",
+      2
+    ],
+    [
+      "rgb(79, 78, 71)",
+      1
+    ],
+    [
+      "rgb(104, 103, 93)",
+      1
+    ],
+    [
+      "rgb(80, 201, 87)",
+      1
+    ],
+    [
+      "rgb(103, 207, 104)",
+      1
+    ],
+    [
+      "rgb(168, 217, 58)",
+      1
+    ],
+    [
+      "rgb(143, 176, 255)",
+      1
+    ],
+    [
+      "rgb(240, 103, 87)",
+      1
+    ]
+  ],
+  "bg_colors": [
+    [
+      "rgb(247, 245, 238)",
+      22
+    ],
+    [
+      "rgb(244, 217, 40)",
+      18
+    ],
+    [
+      "rgb(17, 17, 17)",
+      17
+    ],
+    [
+      "rgb(255, 255, 255)",
+      14
+    ],
+    [
+      "rgb(234, 232, 226)",
+      8
+    ],
+    [
+      "rgb(72, 120, 245)",
+      4
+    ],
+    [
+      "rgb(232, 228, 217)",
+      1
+    ],
+    [
+      "rgb(99, 206, 95)",
+      1
+    ],
+    [
+      "rgb(128, 170, 248)",
+      1
+    ],
+    [
+      "rgb(255, 117, 97)",
+      1
+    ],
+    [
+      "rgb(163, 235, 163)",
+      1
+    ],
+    [
+      "rgb(141, 232, 145)",
+      1
+    ],
+    [
+      "rgb(201, 220, 255)",
+      1
+    ],
+    [
+      "rgb(170, 201, 255)",
+      1
+    ],
+    [
+      "rgb(255, 168, 146)",
+      1
+    ],
+    [
+      "rgb(255, 157, 132)",
+      1
+    ],
+    [
+      "rgb(192, 209, 249)",
+      1
+    ],
+    [
+      "rgb(241, 218, 78)",
+      1
+    ],
+    [
+      "rgb(198, 226, 140)",
+      1
+    ],
+    [
+      "rgb(242, 168, 157)",
+      1
+    ]
+  ],
+  "css_vars": {
+    "--background": "#F7F5EE",
+    "--foreground": "#111",
+    "--border": "#171717",
+    "--yellow": "#F4D928",
+    "--blue": "#4878F5",
+    "--green": "#A8D93A",
+    "--coral": "#F06757",
+    "--muted": "#EAE8DF",
+    "--radius": "12px",
+    "--ease-premium": "cubic-bezier(.22,1,.36,1)",
+    "--ease-soft": "cubic-bezier(.16,1,.3,1)",
+    "--ease-fast": "cubic-bezier(.33,1,.68,1)",
+    "--motion-micro": "180ms",
+    "--motion-card": "280ms",
+    "--motion-enter": "560ms",
+    "--stagger-micro": "30ms",
+    "--stagger-normal": "60ms",
+    "--stagger-large": "100ms"
+  },
+  "headings": [
+    "A: Saltar al contenido  [\"DM Sans\", Arial, sans-serif 14px 700 ls normal rgb(17, 17, 17)]",
+    "A: Explorar  [\"DM Sans\", Arial, sans-serif 14px 600 ls normal rgb(17, 17, 17)]",
+    "A: Categorías  [\"DM Sans\", Arial, sans-serif 14px 600 ls normal rgb(17, 17, 17)]",
+    "A: Busco  [\"DM Sans\", Arial, sans-serif 14px 600 ls normal rgb(17, 17, 17)]",
+    "A: Publicar  [\"DM Sans\", Arial, sans-serif 14px 700 ls normal rgb(17, 17, 17)]",
+    "H1: ESO QUE BUSCAS. | ALGUIEN DEL | CAMPUS LO TIENE.  [Anton, Impact, \"Arial Narrow\", sans-serif 82px 400 ls -1.6px rgb(17, 17, 17)]",
+    "P: Compra, vende y encuentra entre los tuyos. | Menos vueltas. Más cerca. Así de simple.  [\"DM Sans\", Arial, sans-serif 17px 400 ls normal rgb(79, 78, 71)]",
+    "BUTTON: Buscar  [\"DM Sans\", Arial, sans-serif 14px 700 ls normal rgb(255, 255, 255)]",
+    "A: Libros ↗  [\"DM Sans\", Arial, sans-serif 12px 400 ls normal rgb(17, 17, 17)]",
+    "A: Tecnología ↗  [\"DM Sans\", Arial, sans-serif 12px 400 ls normal rgb(17, 17, 17)]",
+    "A: Ropa ↗  [\"DM Sans\", Arial, sans-serif 12px 400 ls normal rgb(17, 17, 17)]",
+    "A: Tecnología | Lo que necesitas más cerca.  [\"DM Sans\", Arial, sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "A: Libros | Conocimiento que circula.  [\"DM Sans\", Arial, sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "A: Ropa | Tu estilo también estudia.  [\"DM Sans\", Arial, sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "H2: ¿QUÉ ANDAS BUSCANDO?  [Anton, Impact, \"Arial Narrow\", sans-serif 40px 400 ls -0.8px rgb(17, 17, 17)]",
+    "A: Todas las categorías  [\"DM Sans\", Arial, sans-serif 14px 600 ls normal rgb(17, 17, 17)]",
+    "A: 01 | Tecnología  [\"DM Sans\", Arial, sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "A: 02 | Libros  [\"DM Sans\", Arial, sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "A: 03 | Ropa  [\"DM Sans\", Arial, sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "A: 04 | Apuntes  [\"DM Sans\", Arial, sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "A: 05 | Accesorios  [\"DM Sans\", Arial, sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "A: 06 | Otros  [\"DM Sans\", Arial, sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "H2: RECIÉN PUBLICADO✳  [Anton, Impact, \"Arial Narrow\", sans-serif 40px 400 ls -0.8px rgb(17, 17, 17)]",
+    "A: Ver más hallazgos  [\"DM Sans\", Arial, sans-serif 14px 600 ls normal rgb(17, 17, 17)]",
+    "A: RECIÉN LLEGADO | Ver producto | Como nuevo | · En el campus | Audífonos para desconectarte | S/ 180 | UPeU · Lima | Lucía M.  [\"DM Sans\", Arial, sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "H3: Audífonos para desconectarte  [\"DM Sans\", Arial, sans-serif 15px 600 ls normal rgb(17, 17, 17)]",
+    "A: BUEN PRECIO | Ver producto | Usado | · En el campus | Libros para un nuevo ciclo | S/ 45 | UPeU · Lima | Diego R.  [\"DM Sans\", Arial, sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "H3: Libros para un nuevo ciclo  [\"DM Sans\", Arial, sans-serif 15px 600 ls normal rgb(17, 17, 17)]",
+    "A: OTRA HISTORIA | Ver producto | Usado | · En el campus | Cámara analógica Rolleiflex | S/ 890 | UPeU · Lima | Valeria C.  [\"DM Sans\", Arial, sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "H3: Cámara analógica Rolleiflex  [\"DM Sans\", Arial, sans-serif 15px 600 ls normal rgb(17, 17, 17)]",
+    "A: CERCA DE TI | Ver producto | Como nuevo | · En el campus | Mochila para todos los días | S/ 65 | UPeU · Lima | Mateo P.  [\"DM Sans\", Arial, sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "H3: Mochila para todos los días  [\"DM Sans\", Arial, sans-serif 15px 600 ls normal rgb(17, 17, 17)]",
+    "P: Una primera mirada al campus. Los productos y perfiles mostrados son ejemplos.  [\"DM Sans\", Arial, sans-serif 12px 400 ls normal rgb(102, 102, 94)]",
+    "H2: ALGUIEN LO ESTÁ BUSCANDO.  [Anton, Impact, \"Arial Narrow\", sans-serif 40px 400 ls -0.8px rgb(17, 17, 17)]",
+    "A: Mira qué buscan  [\"DM Sans\", Arial, sans-serif 14px 600 ls normal rgb(17, 17, 17)]",
+    "H3: Busco calculadora científica  [\"DM Sans\", Arial, sans-serif 21px 700 ls -0.4px rgb(17, 17, 17)]",
+    "P: Para los cursos de este ciclo. Si tienes una que ya no usas, ¡hablemos!  [\"DM Sans\", Arial, sans-serif 14px 400 ls normal rgb(88, 89, 79)]",
+    "A: Yo tengo uno  [\"DM Sans\", Arial, sans-serif 12px 700 ls normal rgb(17, 17, 17)]",
+    "H3: ¿Alguien tiene una bata talla M?  [\"DM Sans\", Arial, sans-serif 21px 700 ls -0.4px rgb(17, 17, 17)]",
+    "P: La necesito para mis prácticas. Puede ser de segunda mano.  [\"DM Sans\", Arial, sans-serif 14px 400 ls normal rgb(88, 89, 79)]",
+    "A: Yo tengo uno  [\"DM Sans\", Arial, sans-serif 12px 700 ls normal rgb(17, 17, 17)]",
+    "H3: Una guitarra para empezar  [\"DM Sans\", Arial, sans-serif 21px 700 ls -0.4px rgb(17, 17, 17)]",
+    "P: Busco una guitarra acústica en buen estado para aprender.  [\"DM Sans\", Arial, sans-serif 14px 400 ls normal rgb(88, 89, 79)]",
+    "A: Yo tengo uno  [\"DM Sans\", Arial, sans-serif 12px 700 ls normal rgb(17, 17, 17)]",
+    "A: Publicar lo que busco  [\"DM Sans\", Arial, sans-serif 14px 400 ls normal rgb(17, 17, 17)]",
+    "H2: OJITO CON ESTO.  [Anton, Impact, \"Arial Narrow\", sans-serif 40px 400 ls -0.8px rgb(17, 17, 17)]",
+    "A: Encontrar lo que busco  [\"DM Sans\", Arial, sans-serif 14px 600 ls normal rgb(17, 17, 17)]",
+    "A: OTRA HISTORIA | Ver producto | Usado | · En el campus | Cámara analógica Rolleiflex | S/ 890 | UPeU · Lima | Valeria C.  [\"DM Sans\", Arial, sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "H3: Cámara analógica Rolleiflex  [\"DM Sans\", Arial, sans-serif 15px 600 ls normal rgb(17, 17, 17)]",
+    "A: CERCA DE TI | Ver producto | Como nuevo | · En el campus | Mochila para todos los días | S/ 65 | UPeU · Lima | Mateo P.  [\"DM Sans\", Arial, sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "H3: Mochila para todos los días  [\"DM Sans\", Arial, sans-serif 15px 600 ls normal rgb(17, 17, 17)]",
+    "A: DESTACADO | Ver producto | Como nuevo | · En el campus | Zapatillas urbanas · talla 39 | S/ 120 | UPeU · Lima | Ana S.  [\"DM Sans\", Arial, sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "H3: Zapatillas urbanas · talla 39  [\"DM Sans\", Arial, sans-serif 15px 600 ls normal rgb(17, 17, 17)]",
+    "A: NUEVO | Ver producto | Nuevo | · En el campus | Verde para tu escritorio | S/ 25 | UPeU · Lima | Sofía G.  [\"DM Sans\", Arial, sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "H3: Verde para tu escritorio  [\"DM Sans\", Arial, sans-serif 15px 600 ls normal rgb(17, 17, 17)]",
+    "H2: COMPRAR AQUÍ ES | BASTANTE SIMPLE.  [Anton, Impact, \"Arial Narrow\", sans-serif 40px 400 ls -0.8px rgb(17, 17, 17)]",
+    "H3: BUSCA  [Anton, Impact, sans-serif 25px 400 ls normal rgb(17, 17, 17)]",
+    "P: Encuentra eso que necesitas dentro de tu comunidad.  [\"DM Sans\", Arial, sans-serif 14px 400 ls normal rgb(67, 68, 60)]",
+    "H3: HABLA  [Anton, Impact, sans-serif 25px 400 ls normal rgb(17, 17, 17)]",
+    "P: Contacta al estudiante por WhatsApp y resuelve tus dudas.  [\"DM Sans\", Arial, sans-serif 14px 400 ls normal rgb(67, 68, 60)]",
+    "H3: ACUERDA  [Anton, Impact, sans-serif 25px 400 ls normal rgb(17, 17, 17)]",
+    "P: Elijan un punto concurrido del campus y revisa el producto.  [\"DM Sans\", Arial, sans-serif 14px 400 ls normal rgb(67, 68, 60)]",
+    "H2: VENDE LO QUE | YA NO USAS.  [Anton, Impact, \"Arial Narrow\", sans-serif 76px 400 ls -1.52px rgb(17, 17, 17)]",
+    "P: Haz espacio y dale una nueva historia con otro estudiante.  [\"DM Sans\", Arial, sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "A: Empezar a vender  [\"DM Sans\", Arial, sans-serif 14px 700 ls normal rgb(17, 17, 17)]",
+    "H2: UNA COMUNIDAD | MÁS SEGURA.  [Anton, Impact, \"Arial Narrow\", sans-serif 40px 400 ls -0.8px rgb(17, 17, 17)]",
+    "A: Cuidémonos entre todos  [\"DM Sans\", Arial, sans-serif 14px 600 ls normal rgb(17, 17, 17)]",
+    "H3: Personas, no desconocidos  [\"DM Sans\", Arial, sans-serif 18px 700 ls normal rgb(17, 17, 17)]",
+    "P: Perfiles con carrera y campus. Una cuenta no equivale a verificación universitaria.  [\"DM Sans\", Arial, sans-serif 14px 400 ls normal rgb(88, 89, 79)]",
+    "H3: Algo no cuadra. Repórtalo.  [\"DM Sans\", Arial, sans-serif 18px 700 ls normal rgb(17, 17, 17)]",
+    "P: Un acceso directo para reportar publicaciones, spam o conductas sospechosas.  [\"DM Sans\", Arial, sans-serif 14px 400 ls normal rgb(88, 89, 79)]",
+    "H3: La confianza se construye  [\"DM Sans\", Arial, sans-serif 18px 700 ls normal rgb(17, 17, 17)]",
+    "P: Lee las reseñas del vendedor, revisa el producto y acuerda la entrega en un lugar público.  [\"DM Sans\", Arial, sans-serif 14px 400 ls normal rgb(88, 89, 79)]",
+    "H2: DE UN ESTUDIANTE. | PARA OTRO.  [Anton, Impact, \"Arial Narrow\", sans-serif 40px 400 ls -0.8px rgb(17, 17, 17)]",
+    "P: Situaciones ilustrativas de la comunidad.  [\"DM Sans\", Arial, sans-serif 12px 400 ls normal rgb(102, 102, 94)]",
+    "H2: ¿TODAVÍA | TIENES DUDAS?  [Anton, Impact, \"Arial Narrow\", sans-serif 40px 400 ls -0.8px rgb(17, 17, 17)]",
+    "H2: ¿LISTO PARA TU | PRIMER HALLAZGO?  [Anton, Impact, sans-serif 76px 400 ls -1.52px rgb(17, 17, 17)]",
+    "P: Crea tu cuenta, publica gratis y encuentra lo que necesitas sin salir del campus.  [\"DM Sans\", Arial, sans-serif 17px 400 ls normal rgb(17, 17, 17)]",
+    "A: Explorar productos  [\"DM Sans\", Arial, sans-serif 14px 700 ls normal rgb(255, 255, 255)]",
+    "A: Publicar gratis  [\"DM Sans\", Arial, sans-serif 14px 700 ls normal rgb(17, 17, 17)]",
+    "P: Buenas cosas. | Personas más cerca.  [\"DM Sans\", Arial, sans-serif 19px 400 ls normal rgb(17, 17, 17)]",
+    "A: Comprar  [\"DM Sans\", Arial, sans-serif 13px 400 ls normal rgb(17, 17, 17)]",
+    "A: Vender  [\"DM Sans\", Arial, sans-serif 13px 400 ls normal rgb(17, 17, 17)]",
+    "A: Busco  [\"DM Sans\", Arial, sans-serif 13px 400 ls normal rgb(17, 17, 17)]",
+    "A: Mis favoritos  [\"DM Sans\", Arial, sans-serif 13px 400 ls normal rgb(17, 17, 17)]",
+    "A: Mis publicaciones  [\"DM Sans\", Arial, sans-serif 13px 400 ls normal rgb(17, 17, 17)]",
+    "A: Mi cuenta  [\"DM Sans\", Arial, sans-serif 13px 400 ls normal rgb(17, 17, 17)]",
+    "A: Cómo funciona  [\"DM Sans\", Arial, sans-serif 13px 400 ls normal rgb(17, 17, 17)]",
+    "A: Ayuda y seguridad  [\"DM Sans\", Arial, sans-serif 13px 400 ls normal rgb(17, 17, 17)]",
+    "A: Privacidad y términos  [\"DM Sans\", Arial, sans-serif 13px 400 ls normal rgb(17, 17, 17)]",
+    "BUTTON: Pausar movimiento  [\"DM Sans\", Arial, sans-serif 11px 400 ls normal rgb(92, 92, 83)]",
+    "A: Sobre Sacha Market ↗  [\"DM Sans\", Arial, sans-serif 12px 400 ls normal rgb(92, 92, 83)]",
+    "A: Inicio  [\"DM Sans\", Arial, sans-serif 16px 800 ls normal rgb(17, 17, 17)]",
+    "A: Buscar  [\"DM Sans\", Arial, sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "A: Publicar  [\"DM Sans\", Arial, sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "A: Favoritos  [\"DM Sans\", Arial, sans-serif 16px 400 ls normal rgb(17, 17, 17)]",
+    "A: Perfil  [\"DM Sans\", Arial, sans-serif 16px 400 ls normal rgb(17, 17, 17)]"
+  ],
+  "images": [
+    {
+      "src": "http://127.0.0.1:5173/images/sacha-market-logo.webp",
+      "alt": "Sacha Market",
+      "w": 640,
+      "h": 275
+    },
+    {
+      "src": "http://127.0.0.1:5173/images/togito-hero.webp",
+      "alt": "Togito saluda desde el campus",
+      "w": 640,
+      "h": 640
+    },
+    {
+      "src": "http://127.0.0.1:5173/images/categories/togito-tecnologia.webp",
+      "alt": "Togito representa la categoría Tecnología",
+      "w": 620,
+      "h": 620
+    },
+    {
+      "src": "http://127.0.0.1:5173/images/categories/togito-libros.webp",
+      "alt": "Togito representa la categoría Libros",
+      "w": 620,
+      "h": 620
+    },
+    {
+      "src": "http://127.0.0.1:5173/images/categories/togito-ropa.webp",
+      "alt": "Togito representa la categoría Ropa",
+      "w": 620,
+      "h": 620
+    },
+    {
+      "src": "http://127.0.0.1:5173/images/categories/togito-apuntes.webp",
+      "alt": "Togito representa la categoría Apuntes",
+      "w": 620,
+      "h": 620
+    },
+    {
+      "src": "http://127.0.0.1:5173/images/categories/togito-accesorios.webp",
+      "alt": "Togito representa la categoría Accesorios",
+      "w": 620,
+      "h": 620
+    },
+    {
+      "src": "http://127.0.0.1:5173/images/categories/togito-otros.webp",
+      "alt": "Togito representa la categoría Otros",
+      "w": 620,
+      "h": 620
+    },
+    {
+      "src": "http://127.0.0.1:5173/images/headphones.jpg",
+      "alt": "Audífonos para desconectarte",
+      "w": 1000,
+      "h": 1512
+    },
+    {
+      "src": "http://127.0.0.1:5173/images/books.jpg",
+      "alt": "Libros para un nuevo ciclo",
+      "w": 1000,
+      "h": 1500
+    },
+    {
+      "src": "http://127.0.0.1:5173/images/camera.jpg",
+      "alt": "Cámara analógica Rolleiflex",
+      "w": 1000,
+      "h": 667
+    },
+    {
+      "src": "http://127.0.0.1:5173/images/backpack.jpg",
+      "alt": "Mochila para todos los días",
+      "w": 1000,
+      "h": 1500
+    },
+    {
+      "src": "http://127.0.0.1:5173/images/camera.jpg",
+      "alt": "Cámara analógica Rolleiflex",
+      "w": 1000,
+      "h": 667
+    },
+    {
+      "src": "http://127.0.0.1:5173/images/backpack.jpg",
+      "alt": "Mochila para todos los días",
+      "w": 1000,
+      "h": 1500
+    },
+    {
+      "src": "http://127.0.0.1:5173/images/sneakers.jpg",
+      "alt": "Zapatillas urbanas · talla 39",
+      "w": 1000,
+      "h": 1250
+    },
+    {
+      "src": "http://127.0.0.1:5173/images/plant.jpg",
+      "alt": "Verde para tu escritorio",
+      "w": 1000,
+      "h": 1500
+    },
+    {
+      "src": "http://127.0.0.1:5173/images/togito-1.webp",
+      "alt": "Togito te acompaña, paso a paso",
+      "w": 480,
+      "h": 480
+    },
+    {
+      "src": "http://127.0.0.1:5173/images/backpack.jpg",
+      "alt": "Una mochila que puede tener una nueva historia",
+      "w": 1000,
+      "h": 1500
+    },
+    {
+      "src": "http://127.0.0.1:5173/images/books.jpg",
+      "alt": "Libros para una nueva historia",
+      "w": 1000,
+      "h": 1500
+    },
+    {
+      "src": "http://127.0.0.1:5173/images/camera.jpg",
+      "alt": "Cámara de segunda mano",
+      "w": 1000,
+      "h": 667
+    },
+    {
+      "src": "http://127.0.0.1:5173/images/togito-5.webp",
+      "alt": "Togito celebra tu llegada a Sacha Market",
+      "w": 480,
+      "h": 480
+    },
+    {
+      "src": "http://127.0.0.1:5173/images/sacha-market-logo.webp",
+      "alt": "Sacha Market",
+      "w": 640,
+      "h": 275
+    }
+  ],
+  "videos": [],
+  "og_image": "https://sacha-market.vercel.app/og-image.jpg",
+  "favicons": [
+    "http://127.0.0.1:5173/favicon.ico?v=sacha",
+    "http://127.0.0.1:5173/favicon-32.png",
+    "http://127.0.0.1:5173/favicon-192.png",
+    "http://127.0.0.1:5173/apple-touch-icon.png"
+  ],
+  "header_svgs": [
+    "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-heart\" aria-hidden=\"true\"><path d=\"M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5\"></path></svg>",
+    "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-plus\" aria-hidden=\"true\"><path d=\"M5 12h14\"></path><path d=\"M12 5v14\"></path></svg>",
+    "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-user-round\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"8\" r=\"5\"></circle><path d=\"M20 21a8 8 0 0 0-16 0\"></path></svg>",
+    "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"21\" height=\"21\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-house\" aria-hidden=\"true\"><path d=\"M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8\"></path><path d=\"M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z\"></path></svg>",
+    "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"21\" height=\"21\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-search\" aria-hidden=\"true\"><path d=\"m21 21-4.34-4.34\"></path><circle cx=\"11\" cy=\"11\" r=\"8\"></circle></svg>",
+    "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"21\" height=\"21\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-plus\" aria-hidden=\"true\"><path d=\"M5 12h14\"></path><path d=\"M12 5v14\"></path></svg>"
+  ],
+  "network_media": [
+    "http://127.0.0.1:5173/images/sacha-market-logo.webp",
+    "http://127.0.0.1:5173/images/togito-hero.webp",
+    "http://127.0.0.1:5173/images/backpack.jpg",
+    "http://127.0.0.1:5173/images/books.jpg",
+    "http://127.0.0.1:5173/images/camera.jpg",
+    "http://127.0.0.1:5173/images/categories/togito-tecnologia.webp",
+    "http://127.0.0.1:5173/images/categories/togito-libros.webp",
+    "http://127.0.0.1:5173/images/categories/togito-apuntes.webp",
+    "http://127.0.0.1:5173/images/categories/togito-accesorios.webp",
+    "http://127.0.0.1:5173/images/categories/togito-otros.webp",
+    "http://127.0.0.1:5173/images/categories/togito-ropa.webp",
+    "http://127.0.0.1:5173/images/headphones.jpg",
+    "http://127.0.0.1:5173/images/sneakers.jpg",
+    "http://127.0.0.1:5173/images/plant.jpg",
+    "http://127.0.0.1:5173/images/togito-1.webp",
+    "http://127.0.0.1:5173/images/togito-5.webp"
+  ]
+}

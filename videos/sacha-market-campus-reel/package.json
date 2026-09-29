@@ -1,0 +1,8 @@
+{
+  "name": "sacha-market-campus-reel",
+  "private": true,
+  "type": "commonjs",
+  "devDependencies": {
+    "playwright": "1.56"
+  }
+}

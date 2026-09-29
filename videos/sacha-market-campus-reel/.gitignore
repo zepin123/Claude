@@ -1,0 +1,7 @@
+node_modules/
+review/
+renders/draft_*
+renders/clip_*
+renders/*.tmp.mp4
+audio/*.wav
+!audio/mix.wav
