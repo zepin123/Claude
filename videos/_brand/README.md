@@ -22,6 +22,10 @@
 | `togito-cuerpo-brazos-cruzados.png` | brazos cruzados, seguro | seguridad, "confía", reto |
 | `togito-cuerpo-sorpresa.png` | sorprendido, con rayitas de impacto | hallazgos, ofertas, revelaciones |
 | `togito-cuerpo-no-se.png` | encoge los hombros, preocupado | estados vacíos, "¿no lo encuentras?", errores |
+| `togito-cuerpo-triste.png` | cabizbajo, patas juntas | "no hay resultados", despedida, antes/después |
+| `togito-cuerpo-pulgar-arriba.png` | pulgar arriba, seguro | confirmación, "¡listo!", recomendación |
+| `togito-cuerpo-guino-saludo.png` | guiña y saluda | intro/outro cómplice, tips, CTA amistoso |
+| `togito-cuerpo-celebra.png` | salta celebrando, ojos cerrados | éxito, venta hecha, cierre festivo |
 
 Otras poses de cuerpo entero están en el repo del sitio (`public/images/togito-*.webp`) y en
 `sacha-market-campus-reel/assets/brand/` (incluye recortes con fondo transparente `togito-3-cut.png`, `togito-5-cut.png`).
