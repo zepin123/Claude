@@ -14,6 +14,15 @@
 | `togito-cara-guino.png` | guiño con sonrisa | tips, secretos, CTA amistoso |
 | `togito-cara-pensativo.png` | mirada arriba, media sonrisa | preguntas, "¿qué andas buscando?", ideas |
 
-Las poses de cuerpo entero siguen en el repo del sitio (`public/images/togito-*.webp`) y en
+## `togito-cuerpo/` — Togito de cuerpo entero (PNG 1254×1254, fondo transparente)
+| Archivo | Pose | Uso sugerido |
+|---|---|---|
+| `togito-cuerpo-de-pie.png` | de pie, sonriente, frontal | presentación, bienvenida, fondo de escena |
+| `togito-cuerpo-saludo.png` | saluda con la pata | intro/outro, "¡hola!", CTA |
+| `togito-cuerpo-brazos-cruzados.png` | brazos cruzados, seguro | seguridad, "confía", reto |
+| `togito-cuerpo-sorpresa.png` | sorprendido, con rayitas de impacto | hallazgos, ofertas, revelaciones |
+| `togito-cuerpo-no-se.png` | encoge los hombros, preocupado | estados vacíos, "¿no lo encuentras?", errores |
+
+Otras poses de cuerpo entero están en el repo del sitio (`public/images/togito-*.webp`) y en
 `sacha-market-campus-reel/assets/brand/` (incluye recortes con fondo transparente `togito-3-cut.png`, `togito-5-cut.png`).
 Logo vectorizado por piezas: `sacha-market-logo-reveal/film/logo.js`.
